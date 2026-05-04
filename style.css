@@ -1,0 +1,125 @@
+/*RESET A BASE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+ 
+}
+
+/* CONTAINER */
+.container {
+    background:white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/*FORMULARIO*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*TITULO*/
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    }
+
+/*INPUTS*/
+input {
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+/*BOTÃO*/
+button {
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #667eea;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*LINK*/
+p {
+    text-align: center;
+    margin-top: 1rem;
+    color: #666;
+}
+p a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/*animação de entrada*/
+.container {
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*EVENTOS*/
+/*efeito ao passar mouse no container*/
+.container:hover {
+    transform: scale(1.02);
+}
+/* foco no input */
+input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* hover no input */
+input:hover {
+    border-color: #764ba2;
+}
+
+/* hover no botão */
+button:hover {
+    background: #5a67d8;
+    transform: translatey(-2px);
+}
+
+/* clique no botão */
+button:active {
+    transform: scale(0.97);
+    background: #4c51bf;
+}
+/* hover no link */
+a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
